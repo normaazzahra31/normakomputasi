@@ -10,34 +10,28 @@ if (sx == 'C'):
     y = x
   elif(sy == 'F'):
 
-# Fungsi konversi
-def celsius_to_fahrenheit(celsius):
-    return (celsius * 9/5) + 32
+if (sx == 'C'):
+  if(sy == 'C'):
+    y = x
+  elif(sy == 'F'):
+    y = (x * 9/5) + 32
+  elif (sy == 'K'):
+     y = x + 273.15
 
-def fahrenheit_to_celsius(fahrenheit):
-    return (fahrenheit - 32) * 5/9
-
-# Input dari pengguna
-x = st.number_input("Masukkan angka")
-sx = st.text_input("Satuan", "C").upper()
-sy = st.text_input("Dikonversi ke", "C").upper()
-
-st.write("Anda memasukkan", x, 'dalam', sx)
-
-y = 0
-if sx == 'C':
-    if sy == 'C':
+elif (sx == 'F'):  
+    if (sy == 'C'):  
+        y = (x - 32) * 5/9
+    elif (sy == 'F'):  
         y = x
-    elif sy == 'F':
-        y = celsius_to_fahrenheit(x)
-elif sx == 'F':
-    if sy == 'C':
-        y = fahrenheit_to_celsius(x)
-    elif sy == 'F':
+    elif (sy == 'K'):  
+        y = (x - 32) * 5/9 + 273.15
+
+elif (sx == 'K'):  
+    if (sy == 'C'):  
+        y = x - 273.15
+    elif (sy == 'F'): 
+        y = (x - 273.15) * 9/5 + 32
+    elif (sy == 'K'):  
         y = x
 
-# Menampilkan hasil
-st.write(f"{x} {sx} = {y} {sy}")
-
-
-
+st.write (x, ' ', sx, ' = ',y, sy)
