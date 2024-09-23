@@ -8,11 +8,7 @@ y = 0
 if (sx == 'C'):
   if (sy == 'C'):
     y = x
-  elif(sy == 'F'):
 
-if (sx == 'C'):
-  if(sy == 'C'):
-    y = x
   elif(sy == 'F'):
     y = (x * 9/5) + 32
   elif (sy == 'K'):
