@@ -1,4 +1,4 @@
-import streamlit as.st
+import streamlit as st
 
 x = st.number_input("Masukkan angka")
 sx = st.text_input("Satuan", "C")
