@@ -8,7 +8,7 @@ y = 0
 if (sx == 'C'):
   if (sy == 'C'):
     y = x
-  elif(sy == 'F'):
+    (sy == 'F'):
       
 def celsius_to_fahrenheit(celsius):
     return (celsius * 9/5) + 32
